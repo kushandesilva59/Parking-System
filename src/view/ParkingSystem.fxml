@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="parkingSysytemContext" prefHeight="581.0" prefWidth="923.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ParkingSystemController">
+   <children>
+      <Label alignment="CENTER_RIGHT" layoutX="76.0" layoutY="143.0" prefHeight="31.0" prefWidth="129.0" text="Select Vehicle">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboBoxVehicle" layoutX="211.0" layoutY="143.0" onAction="#clickedOnAction" prefHeight="31.0" prefWidth="222.0" promptText="Vehicle Number" />
+      <Label alignment="CENTER_RIGHT" layoutX="76.0" layoutY="223.0" prefHeight="31.0" prefWidth="129.0" text="Vehicle Type">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblVehicleType" alignment="BOTTOM_CENTER" layoutX="211.0" layoutY="223.0" prefHeight="31.0" prefWidth="222.0" style="-fx-background-color: #B2BEC3;">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="76.0" layoutY="291.0" prefHeight="31.0" prefWidth="129.0" text="Driver">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboBoxDriver" layoutX="211.0" layoutY="291.0" prefHeight="31.0" prefWidth="222.0" promptText="Driver Name" />
+      <Label alignment="BOTTOM_CENTER" layoutX="96.0" layoutY="364.0" prefHeight="31.0" prefWidth="352.0" style="-fx-background-color: #B2BEC3;" text="Your parking Slot Number">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblSlotNumber" alignment="CENTER" layoutX="96.0" layoutY="395.0" prefHeight="118.0" prefWidth="352.0" style="-fx-background-color: #B2BEC3;">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDate" alignment="TOP_LEFT" layoutX="472.0" layoutY="143.0" prefHeight="47.0" prefWidth="110.0" style="-fx-background-color: #B2BEC3;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTime" alignment="CENTER" layoutX="582.0" layoutY="143.0" prefHeight="47.0" prefWidth="183.0" style="-fx-background-color: #B2BEC3;">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnParkVehicle" buttonType="RAISED" contentDisplay="CENTER" layoutX="472.0" layoutY="217.0" onAction="#parkVehicleOnAction" prefHeight="47.0" prefWidth="292.0" style="-fx-background-color: #B2BEC3;" text="Park Vehicle" />
+      <JFXButton fx:id="btnOnDelivery" buttonType="RAISED" contentDisplay="CENTER" layoutX="472.0" layoutY="291.0" onAction="#onDeleveryShiftOnAction" prefHeight="47.0" prefWidth="292.0" style="-fx-background-color: #B2BEC3;" text="On Delevery Shift" />
+      <JFXButton fx:id="btnManagementLogin" buttonType="RAISED" contentDisplay="CENTER" layoutX="472.0" layoutY="431.0" onAction="#managementLoginOnAction" prefHeight="47.0" prefWidth="292.0" style="-fx-border-color: #B2BEC3;" text="Management Log in" />
+      <AnchorPane fx:id="loginFormContext" layoutX="148.0" layoutY="135.0" prefHeight="375.0" prefWidth="600.0" />
+   </children>
+</AnchorPane>
